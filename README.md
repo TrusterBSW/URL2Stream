@@ -34,7 +34,7 @@ docker run -d -hwaccels --gpus all url2stream-gpu:latest
 
 ```bash
 docker run \
-  -e FIREFOX_URL="http://localhost:3000/d/dashboard" \
+  -e FIREFOX_URL="http://grafana.local:3000/d/dashboard" \
   -e XVFB_WIDTH=2560 \
   -e XVFB_HEIGHT=1440 \
   -e FFMPEG_CRF=20 \
