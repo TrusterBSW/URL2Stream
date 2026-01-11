@@ -1,0 +1,35 @@
+services:
+  url2stream:
+    image: url2stream:gpu
+    container_name: url2stream-gpu
+    restart: unless-stopped
+    
+    # GPU Support
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    
+    # Volumes
+    volumes:
+      - ./data:/data
+    
+    # Environment Variables, default values below
+    environment:
+      #DISPLAY: ":99"
+      #XVFB_WIDTH: "1920"
+      #XVFB_HEIGHT: "1080"
+      #XVFB_DEPTH: "24"
+
+      #FFMPEG_FRAMERATE: "24"
+      #FFMPEG_CRF: "26"
+      #FFMPEG_CODEC: "h264_nvenc"
+      #FFMPEG_PRESET: "fast"
+      #FFMPEG_CONTAINER: "mpegts"
+      #FFMPEG_OUTPUT_URI: "udp://172.17.0.1:9000"
+
+      #FIREFOX_URL: "https://example.com"
+      #FIREFOX_PROFILE: "/data/PROFILE" #not defined by default
