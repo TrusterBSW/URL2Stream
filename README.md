@@ -26,8 +26,8 @@ docker run -d url2stream:latest
 
 ```bash
 cd Docker-GPU
-docker compose build -t url2stream:gpu
-docker run -d url2stream:gpu
+docker compose build -t url2stream-gpu
+docker run -d -hwaccels --gpus all url2stream-gpu:latest
 ```
 
 ### ⚙️ Variables d'environnement personnalisées

@@ -1,6 +1,6 @@
 services:
   url2stream:
-    image: url2stream:gpu
+    image: url2stream-gpu:latest
     container_name: url2stream-gpu
     restart: unless-stopped
     
