@@ -5,14 +5,10 @@ Conçu initiallement pour intégration avec [DVB-Tx](https://github.com/TrusterB
 
 ## 📋 Table des matières
 
+- [Démarrage rapide](#-démarrage-rapide)
 - [Architecture](#-architecture)
 - [Configuration](#-configuration)
-- [Démarrage rapide](#-démarrage-rapide)
-- [Exemples](#-exemples)
 - [Structure du projet](#-structure-du-projet)
-- [Licence](#-licence)
-- [Contribution](#-contribution)
-- [Support](#-support)
 - [xdotool Cheat Sheet](#-xdotool-cheat-sheet)
 
 
